@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+nltk
+tensorflow
+matplotlib
+seaborn
+arabic-reshaper
+python-bidi
+jupyter
