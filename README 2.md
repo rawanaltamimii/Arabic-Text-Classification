@@ -177,54 +177,5 @@ df = pd.read_csv('processed_data.csv', encoding='utf-8', encoding_errors='ignore
 <p align="center">
   <img src="confusion_matrices.png" alt="مصفوفات الخلط" width="75%">
 </p>
-
-### 💡 أهم الملاحظات
-
-- 🏆 أعطى **SVM** أفضل النتائج، وكان متوسط الـ precision والـ recall والـ F1 يساوي 0.99.
-- 📊 النماذج التقليدية مع TF-IDF تفوقت على الـ LSTM في هذه البيانات، وتتدرب في ثواني.
-- 🔍 أغلب الأخطاء بين **ريادة الأعمال** و**التقنية** (20 من 24 خطأ في SVM). وهذا منطقي لأن أخبار الشركات الناشئة والتمويل التقني تتداخل بين الموضوعين.
-
----
-
-## 🚀 طريقة التشغيل
-
-```bash
-git clone https://github.com/rawanaltamimii/Arabic-Text-Classification.git
-cd Arabic-Text-Classification
-pip install -r "requirements 2.txt"
-python -c "import nltk; nltk.download('stopwords')"
-jupyter notebook "مشروع nlp1.ipynb"
-```
-
-كُتب الـ notebook على Google Colab. إذا شغلتيه على جهازك، غيّري مسار البيانات في أول الخلايا:
-
-```python
-df = pd.read_csv('processed_data.csv', encoding='utf-8', encoding_errors='ignore')
-```
-
----
-
-## 🔭 القيود والتطوير المستقبلي
-
-- دُرّب الـ LSTM لخمس دورات فقط، وتذبذبت دقة التحقق بين 95% و98%. الإيقاف المبكر أو تنظيم أقوى أو تضمينات عربية مدرّبة مسبقًا ممكن تثبّت الأداء.
-- النتائج من تقسيم واحد للبيانات. التحقق المتقاطع (cross-validation) يعطي تقديرًا أوثق.
-- نموذج Logistic Regression استخدم TF-IDF مدرّبًا قبل التقسيم، بينما Naive Bayes وSVM استخدما pipeline يدرّبه على بيانات التدريب فقط. توحيد الطريقة بالـ pipeline يجعل المقارنة أعدل.
-- الخطوة الجاية: تجربة نماذج المحوّلات مثل BERT للعربية، وبيانات أكبر، ومعالجة أقوى (مثل الـ stemming).
-
----
-
-## 👩‍💻 الفريق
-
-| العضوة | المساهمة |
-|--------|----------|
-| **لجين الرميلي** | معالجة البيانات، خصائص TF-IDF، نماذج التعلّم الآلي، الرسوم، كتابة التقرير |
-| **روان التميمي** | بناء الـ LSTM، التدريب والتقييم، تحليل النتائج، مراجعة التقرير |
-
-</div>
-
----
-
-<p align="center">
-  Made with 💜 by <b>Rawan Altamimi</b> &amp; <b>Lujain Alrimali</b><br>
-  <sub>⭐ If you like this project, give it a star! &nbsp;|&nbsp; ⭐ إذا أعجبك المشروع، لا تنسي النجمة!</sub>
+ المشروع، لا تنسي النجمة!</sub>
 </p>
